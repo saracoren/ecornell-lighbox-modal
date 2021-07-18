@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function message_broadcast(message)
+      {
+      localStorage.setItem('message',JSON.stringify(message));
+      localStorage.removeItem('message');
+      }
+    </script>
+    <meta charset="UTF-8">
+    <title>Alumni Photo Gallery</title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="all">
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <h1>The Cornell University Alumni Photo Gallery</h1>
+      <p>
+        Esteemed Alumni,
+        <br>
+        <br>
+        We hope that the gallery below helps you relive some of your Ithaca memories! Come back soon! Ithaca misses you!
+        <br>
+        <br>
+        -Cornell University Office of Alumni Affairs and Development
+      </p>
+      <button class="btn btn-primary" id="openGallery">Open Gallery</button>
+    </div id="result-info">
+      <!-- The Modal -->
+      <div id="galleryModal" class="modal hidden">
+        <!-- Modal Content -->
+        <div class="modal-content">
+          <div id="modal-header">
+            <img id="close" src="images/close.png" width="30px" height="30px" onclick="document.getElementById('galleryModal').classList.add('hidden');">
+          </div>
+          <img id="mainImage" width="750px" height="500px">
+          <div id="thumbnailRibbon">
+
+          </div>
+        </div>
+      </div>
+      <script src="externalCode/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="scripts/handle_submit.js"></script>
+    <script src="interactivity.js"></script>
+  </body>
+</html>
