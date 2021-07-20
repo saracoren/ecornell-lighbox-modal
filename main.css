@@ -151,14 +151,6 @@ img {
   padding-bottom: 20px;
 }
 
-.thumbnail {
-  height: 60px;
-  width: 100px;
-  margin-left: 0px;
-  margin-right: 5px;
-  margin-bottom: 50px;
-}
-
 #mainDescription {
   width: 750px;
   margin-left: auto;
@@ -167,3 +159,41 @@ img {
   margin-bottom: 20px;
   font-size: 30px;
 }
+
+/* for projects 1 and 2 */
+.thumbnail {
+  height: 60px;
+  width: 100px;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
+
+/* /////////////////////for project 3////////////////////////// */
+.horizontalThumbnail {
+  width: auto;
+  height: 60px;
+}
+
+.verticalThumbnail {
+  width: auto;
+  height: 60px;
+}
+
+#thumbnailRibbon img {
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
+
+#mainImage {
+  height: 500px;
+  width: auto;
+}
+
+/* for project 4 /////////////// */
+
+.selected {
+  /* border: 5px solid #b31b1b; */
+  outline: 4px solid #b31b1b;
+  outline-offset: -4px;
